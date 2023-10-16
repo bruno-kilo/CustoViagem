@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="#673AB7"
+        android:fontFamily="casual"
+        android:gravity="center"
+        android:text="@string/custo_viagem"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="@string/calcule_o_custo_da_sua_viagem"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edit_distance"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:hint="@string/distance"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#4E4848" />
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:text="@string/total_km"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edit_price"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:hint="@string/reais"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#4E4848" />
+
+    <TextView
+        android:layout_width="256dp"
+
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:text="@string/digite_o_valor_do_combust_vel"
+        android:textAlignment="center" />
+
+    <EditText
+        android:id="@+id/edit_autonomy"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:hint="@string/autonomy"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:textAlignment="center"
+        android:textColor="#4E4848" />
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:text="@string/kms_per_liter"
+        android:textAlignment="center" />
+
+    <Button
+        android:onClick="teste"
+        android:id="@+id/button_calculate"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:padding="16dp"
+        android:text="@string/calculate"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:layout_width="256dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="@string/seu_gasto_total_ser_de"
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/text_total_value"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:layout_gravity="center"
+        android:text="@string/r"
+        android:textAlignment="center"
+        android:textColor="#673AB7"
+        android:textSize="32sp" />
+
+</LinearLayout>

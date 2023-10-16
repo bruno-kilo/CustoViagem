@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Custo Viagem</string>
+    <string name="calcule_o_custo_da_sua_viagem">Calcule o custo da sua viagem:</string>
+    <string name="custo_viagem">Custo Viagem</string>
+    <string name="distance">Digite a distância</string>
+    <string name="total_km">Total de quilômetros</string>
+    <string name="price_per_liter">Valor por litro</string>
+    <string name="autonomy">Autonomia do veículo</string>
+    <string name="kms_per_liter">KMs por litro</string>
+    <string name="calculate">CALCULAR</string>
+    <string name="seu_gasto_total_ser_de">SEU GASTO TOTAL SERÁ DE:</string>
+    <string name="r">R$ 0</string>
+    <string name="reais">R$</string>
+    <string name="digite_o_valor_do_combust_vel">Digite o valor do Combustível</string>
+    <string name="validation_fill_all_fields">Preencha todos os campos.</string>
+</resources>
