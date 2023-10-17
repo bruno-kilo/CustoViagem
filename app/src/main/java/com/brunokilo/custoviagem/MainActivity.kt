@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import com.brunokilo.custoviagem.databinding.ActivityMainBinding
 
@@ -73,7 +74,18 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this, R.string.validation_fill_all_fields, Toast.LENGTH_SHORT).show()
         }
     }
+}
 
+fun getFommatedReal(totalValue: Float): String {
+    return "R$ ${"%.2f".format(totalValue)}"
+}
+
+fun Float.getFommatedReal(): String {
+    return "R$ ${"%.2f".format(this)}"
+}
+
+fun EditText.toFormmatedFloat(): Float {
+    return this.text.toString().toFloat()
 }
 
 
