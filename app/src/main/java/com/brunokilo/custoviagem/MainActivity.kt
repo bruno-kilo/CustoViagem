@@ -8,7 +8,7 @@ import android.widget.Toast
 import com.brunokilo.custoviagem.databinding.ActivityMainBinding
 
 
-class MainActivity : AppCompatActivity(), View.OnClickListener {
+class MainActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityMainBinding
 //    private var binding: ActivityMainBinding? = null
@@ -22,16 +22,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 //        val safeBinding = ActivityMainBinding.inflate(layoutInflater)
 //        binding = safeBinding
 
-        binding.buttonCalculate.setOnClickListener(this)
-
-    }
-
-    override fun onClick(view: View) {
-        if (view.id == R.id.button_calculate) {
+        binding.buttonCalculate.setOnClickListener {
             calculate()
-        } else {
-            isValid()
         }
+
     }
 
     private fun isValid(): Boolean {
@@ -75,6 +69,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             // Toast notification
             // Toast.makeText(this, totalValueStr, Toast.LENGTH_SHORT).show()
         } else {
+            isValid()
             Toast.makeText(this, R.string.validation_fill_all_fields, Toast.LENGTH_SHORT).show()
         }
     }
