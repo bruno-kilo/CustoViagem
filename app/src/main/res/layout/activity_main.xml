@@ -85,7 +85,6 @@
         android:textAlignment="center" />
 
     <Button
-        android:onClick="teste"
         android:id="@+id/button_calculate"
         android:layout_width="256dp"
         android:layout_height="wrap_content"
